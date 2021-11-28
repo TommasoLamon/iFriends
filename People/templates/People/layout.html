@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% block title %}
+            {% endblock %}
+        </title>
+        <link rel="stylesheet" href="{% static 'People/styles.css' %}">
+        <body>
+            {% block header %}
+            {% endblock %}
+            <hr>
+            {% block body %}
+            {% endblock %}
+        </body>
+    </head>
+</html>

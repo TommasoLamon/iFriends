@@ -1,0 +1,22 @@
+{% extends 'People/layout.html' %}
+
+{% block title %}
+    iFriends
+{% endblock %}
+
+
+{% block header %}
+<h1>iFriends</h1>
+{% endblock %}
+
+{% block body %}
+       
+    {% for p in list %}
+        <li>
+            <a href="{% url 'info' p.id %}">
+                {{ p.name }}
+            </a>
+        </li>
+    {% endfor %}
+
+{% endblock %}
